@@ -15,7 +15,7 @@
 [![](https://img.shields.io/github/languages/code-size/aquanlerou/WeHalo.svg?style=flat-square)](https://github.com/aquanlerou/WeHalo)
 [![GitHub LICENSE](https://img.shields.io/github/license/aquanlerou/WeHalo.svg?style=flat-square)](https://github.com/aquanlerou/WeHalo/blob/master/LICENSE)
 [![star](https://img.shields.io/github/stars/aquanlerou/WeHalo.svg?label=Stars&style=social)](https://github.com/aquanlerou/WeHalo)
-[![star](https://gitee.com/Aquan_LeRou/WeHalo/badge/star.svg?theme=white)](https://gitee.com/Aquan_LeRou/WeHalo/stargazers)
+[![star](https://gitee.com/aquanrun/WeHalo/badge/star.svg?theme=white)](https://gitee.com/aquanrun/WeHalo/stargazers)
 
 ------------------------------
 
@@ -36,7 +36,7 @@
 
 **WeHalo** [wiˈheɪloʊ]，意为我们的光环，嘻嘻。
 
-配合 [**Halo**](https://github.com/ruibaby/halo) 轻快，简洁，功能强大的博客系统而开发出来的 **简约风** 微信小程序版博客
+配合 [**Halo**](https://github.com/halo-dev/halo) 轻快，简洁，功能强大的博客系统而开发出来的 **简约风** 微信小程序版博客
 
 > QQ交流群: 260050047
 
@@ -74,6 +74,9 @@ globalData: { //全局变量
  }
 ```
 
+**注：
+关于新版本 ``WeHalo`` 找不到 ``adminOpenid`` 的处理方法： ``https://gitee.com/aquanrun/WeHalo/issues/I12J1G``  **
+
 设置个人专属**Logo** 修改 ``WeHalo\miniprogram\colorui\main.wxss`` 文件最后面的
 
 ``` 
@@ -104,6 +107,8 @@ html2wxml插件版本准备
 
 ![WeHalo](https://github.com/aquanlerou/WeHalo/blob/master/image/wx.png)
 
+#### [**更多演示**](https://github.com/aquanlerou/WeHalo/issues/53)
+
 
 ## 许可证
 
@@ -122,7 +127,9 @@ html2wxml插件版本准备
 - [x] 文章评论功能
 - [x] 博主查看评论功能
 - [x] 博主回复评论功能
+- [x] 评论功能内容识别
 - [x] 友链展示
+- [x] 日记本
 - [ ] 点赞功能（云函数）
 - [ ] 文章浏览统计功能（云函数）
 - [ ] 用户回复评论追评功能
@@ -133,7 +140,7 @@ html2wxml插件版本准备
 
 WeHalo的诞生离不开下面这些项目：
 
-- **[Halo](https://github.com/ruibaby/halo)：轻快，简洁，功能强大，使用Java开发的博客系统**
+- **[Halo](https://github.com/halo-dev/halo)： 一个优秀的开源博客发布应用。**
 - **[ColorUI](https://github.com/weilanwl/ColorUI)：鲜亮的高饱和色彩，专注视觉的小程序组件库**
 - **[iView Weapp](https://github.com/TalkingData/iview-weapp)：一套高质量的微信小程序 UI 组件库**
 - **[Painter](https://github.com/Kujiale-Mobile/Painter)：微信小程序生成图片库，绘制一张可以发到朋友圈的图片**
@@ -155,26 +162,45 @@ WeHalo的诞生离不开下面这些项目：
 
 | 日期 | 名称 | 方式 | 金额 | 留言 |
 | :------------: | :------------: | :------------: | :------------: | :------------: |
-| 2019-02-11 | 。花 泽 类 、 | 微信 | 10.00 | 哇哈哈 |
-| 2019-02-27 | 黄 * i | 微信 | 1.00 | 无留言 |
-| 2019-03-08 |  * 桂 林 | 微信 | 1.00 | 无留言 |
-| 2019-03-18 |  * 金 | 微信 | 30.00 | 开源交流 |
-| 2019-03-31 |  * 操 | 微信 | 20.48 | 感谢开源分享 |
-| 2019-04-08 |  * 呱 | 微信 | 10.24 | 感谢开源 |
-| 2019-04-14 |  J * D | 微信 | 10.24 | WeHalo捐赠 |
-| 2019-04-18 |  M | 微信 | 10.24 | 感谢开源 |
-| 2019-04-18 |  夏博 | 微信 | 5.20 | w r family~ |
-| 2019-04-18 |  I'm a joke | 微信 | 10.00 | 感谢开源 |
-| 2019-04-28 |  l * e | 微信 | 10.00 | 感谢开源 |
-| 2019-05-06 |  L * n | 微信 | 10.00 | 产品简洁好用 |
-| 2019-05-08 |  * 家 | 微信 | 5.20 | 支持开源 |
-| 2019-06-08 |  * x | 微信 | 10.01 | 感谢开源 |
-| 2019-06-21 | W * e | 微信 | 20.00 | 好东西，感谢 |
-| 2019-06-21 | * 杰 | 支付宝 | 6.66 | 无留言 |
-| 2019-08-04 | * 杰 | 支付宝 | 6.66 | 无留言 |
-| 2019-08-04 | * 海强 | 支付宝 | 8.88 | 开源辛苦 |
-| 2019-10-04 | * 礼 | 微信 | 8.88 | 无留言 |
+| 2020-07-08 | * t | 微信 | 30.00 | WeHalo捐赠 |
+| 2020-06-19 | * 梁 | 微信 | 5.20 | WeHalo捐赠 by阿梁 |
+| 2020-06-02 | * . | 微信 | 8.88 | 大佬够稳，拿来用啦 |
+| 2020-05-31 | 山 * i | 微信 | 10.24 | 感谢分享，WeHalo |
+| 2020-05-15 | Z * Z | 微信 | 1.00 | 感谢大佬 |
+| 2020-04-22 | 长安 | 微信 | 10.00 | 开源不易，感谢你 |
+| 2020-03-23 | l * 8 | 微信 | 5.00 | 无留言 |
+| 2020-03-17 | M * l | 微信 | 10.24 | 无留言 |
+| 2020-01-17 | * 放 | 微信 | 6.66 | 值得学习 |
+| 2020-01-08 | S * o | 微信 | 3.30 | WeHalo捐赠 By 五月 |
+| 2020-01-07 | * 海洋 | 支付宝 | 16.66 | WeHalo捐献 爱吸猫 |
+| 2020-01-01 | O * l | 微信 | 2.00 | 2020冲！感谢作者 |
+| 2019-11-28 | * 华 | 微信 | 10.24 | 无留言 |
+| 2019-11-27 | * 李 | 微信 | 10.24 | WeHalo捐赠，超级棒！ |
+| 2019-10-16 | * 线 | 微信 | 16.60 | WeHalo捐赠，中轴线 |
+| 2019-10-15 | * 已 | 微信 | 10.00 | 无留言 |
+| 2019-10-14 | J * g | 微信 | 15.00 | 感谢感谢 |
 | 2019-10-08 | MaxWell | 微信 | 8.88 | 开源不易，继续努力。 |
+| 2019-10-04 | * 礼 | 微信 | 8.88 | 无留言 |
+| 2019-08-04 | * 海强 | 支付宝 | 8.88 | 开源辛苦 |
+| 2019-08-04 | * 杰 | 支付宝 | 6.66 | 无留言 |
+| 2019-06-21 | * 杰 | 支付宝 | 6.66 | 无留言 |
+| 2019-06-21 | W * e | 微信 | 20.00 | 好东西，感谢 |
+| 2019-06-08 |  * x | 微信 | 10.01 | 感谢开源 |
+| 2019-05-08 |  * 家 | 微信 | 5.20 | 支持开源 |
+| 2019-05-06 |  L * n | 微信 | 10.00 | 产品简洁好用 |
+| 2019-04-28 |  l * e | 微信 | 10.00 | 感谢开源 |
+| 2019-04-18 |  I'm a joke | 微信 | 10.00 | 感谢开源 |
+| 2019-04-18 |  夏博 | 微信 | 5.20 | w r family~ |
+| 2019-04-18 |  M | 微信 | 10.24 | 感谢开源 |
+| 2019-04-14 |  J * D | 微信 | 10.24 | WeHalo捐赠 |
+| 2019-04-08 |  * 呱 | 微信 | 10.24 | 感谢开源 |
+| 2019-03-31 |  * 操 | 微信 | 20.48 | 感谢开源分享 |
+| 2019-03-18 |  * 金 | 微信 | 30.00 | 开源交流 |
+| 2019-03-08 |  * 桂 林 | 微信 | 1.00 | 无留言 |
+| 2019-02-27 | 黄 * i | 微信 | 1.00 | 无留言 |
+| 2019-02-11 | 。花 泽 类 、 | 微信 | 10.00 | 哇哈哈 |
+
+
 
 ## Stargazers over time
 [![Stargazers over time](https://starchart.cc/aquanlerou/WeHalo.svg)](https://starchart.cc/aquanlerou/WeHalo)

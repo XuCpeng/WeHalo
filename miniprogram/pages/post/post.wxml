@@ -86,7 +86,7 @@
             </view>
         </view>
         <block wx:else>
-            <input bindinput="Comment" style="margin-left: 40rpx;" class="solid-bottom" type="text" focus="{{false}}" maxlength="300" cursor-spacing="10" placeholder="尽管吐槽吧....."></input>
+            <input bindinput="Comment" style="margin-left: 40rpx;" class="solid-bottom" type="text" focus="{{false}}" maxlength="300" cursor-spacing="10" placeholder="尽管吐槽吧....." value="{{commentValue}}"></input>
             <view class="action">
                 <text class="{{false?'cuIcon-likefill text-red':'cuIcon-like text-grey'}}" bindtap="Likes"></text>
             </view>
@@ -96,20 +96,20 @@
     </view>
     
     <view class="margin-bottom">
-        <view class="margin-sm flex flex-wrap align-center" wx:for="{{commentList}}"  wx:for-item="commentList" wx:key wx:for-index="index" data-id="{{index}}">
+        <view class="margin-sm flex flex-wrap align-center" wx:for="{{commentList}}" wx:key="keyId" wx:for-item="commentItem" wx:for-index="index" data-id="{{index}}">
             <view class="basis-xs">
-                <!-- <view class="cu-avatar lg round margin-left-sm" style="background-image:url({{commentList.email==''?commentList.authorUrl:'https://gravatar.loli.net/avatar/undefined/?s=256&d=mp'}});"></view> -->
-                <view class="cu-avatar lg round margin-left-sm" style="background-image:url({{commentList.email==''?commentList.authorUrl:'https://gravatar.loli.net/avatar/undefined/?s=256&d=mp'}});"></view>
+                <!-- <view class="cu-avatar lg round margin-left-sm" style="background-image:url({{commentItem.email==''?commentItem.authorUrl:'https://gravatar.loli.net/avatar/undefined/?s=256&d=mp'}});"></view> -->
+                <view class="cu-avatar lg round margin-left-sm" style="background-image:url({{commentItem.email==''?commentItem.authorUrl:'https://gravatar.loli.net/avatar/undefined/?s=256&d=mp'}});"></view>
             </view>
-            <view class="grid col-1 basis-xl {{commentList.falg?'solid-bottom':''}}" style="min-height:120rpx;">
+            <view class="grid col-1 basis-xl {{commentItem.falg?'solid-bottom':''}}" style="min-height:120rpx;">
                 <view class="padding-xs">
-                    <text class="text-black text-bold">{{commentList.author}}</text>
+                    <text class="text-black text-bold">{{commentItem.author}}</text>
                     <view class="fr text-xs" style="line-height: 32rpx;">
-                        <text class="text-grey">{{commentList.createTime}}</text>
+                        <text class="text-grey">{{commentItem.createTime}}</text>
                     </view>
                 </view>
                 <view class="padding-sm">
-                    <text class="text-sm">{{commentList.content}}</text>
+                    <text class="text-sm">{{commentItem.content}}</text>
                 </view>
             </view>
         </view>

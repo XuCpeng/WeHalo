@@ -17,6 +17,7 @@ Page({
         BlogName: app.globalData.BlogName,
         HaloUser: app.globalData.HaloUser,
         HaloPassword: app.globalData.HaloPassword,
+        miniProgram: app.globalData.miniProgram,
         hasUserInfo: false,
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
         userInfo: {},
@@ -337,7 +338,7 @@ Page({
         });
         var urlPostList = app.globalData.url + '/api/content/posts';
         var token = app.globalData.token;
-        console.warn(e.currentTarget.dataset.id);
+        // console.warn(e.currentTarget.dataset.id);
         var params = {
             page: e.currentTarget.dataset.id,
             size: 10,
@@ -500,7 +501,7 @@ Page({
         // })
         app.globalData.adminToken = res.data.access_token;
         // clearTimeout(delay);
-        console.warn(res)
+        // console.warn(res)
     },
     /**
      * 后台登入请求--接口调用失败处理
